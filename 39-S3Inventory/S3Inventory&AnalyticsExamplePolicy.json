@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "InventoryAndAnalyticsExamplePolicy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::<YOURBUCKETHERE>/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "<YOURACCOUNTIDHERE>",
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                },
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:s3:::<YOURBUCKETHERE>"
+                }
+            }
+        }
+    ]
+}

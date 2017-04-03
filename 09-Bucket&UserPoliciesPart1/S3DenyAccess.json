@@ -1,0 +1,7 @@
+		{
+            "Sid": "S3DenyAccess",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "*",
+            "Resource": "arn:aws:s3:::<YOURBUCKETHERE>/*"
+        }

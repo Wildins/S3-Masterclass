@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Sid": "AllowS3DeleteBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

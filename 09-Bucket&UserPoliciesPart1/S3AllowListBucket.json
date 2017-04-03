@@ -1,0 +1,14 @@
+        {
+            "Sid": "AllowListBucket",
+            "Action": ["s3:ListBucket"],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::<YOURBUCKETHERE>",
+            "Principal": {"AWS": ["<YOURUSERARNHERE>"]}
+        },
+        {
+            "Sid": "AllowGetPutDeleteObject",
+            "Action": ["s3:DeleteObject","s3:GetObject","s3:GetObjectAcl","s3:PutObject","s3:PutObjectAcl"],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::<YOURBUCKETHERE>/private/*",
+            "Principal": {"AWS": ["<YOURUSERARNHERE>"]}
+        }
