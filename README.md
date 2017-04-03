@@ -9,5 +9,5 @@ Please note, this is provided as-is, neither I, nor A Cloud Guru support this co
 ## aCloud.Guru
 This file was created for the purposes of the S3 Masterclass Course from [aCloud.Guru](https://acloud.guru)
 
-##IMPORTANT
+## IMPORTANT
 These files are distributed on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied
