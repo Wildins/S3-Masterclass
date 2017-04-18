@@ -29,25 +29,25 @@ truncate -s $FILESIZE $FILENAME
 aws configure set default.s3.max_concurrent_requests 1
 aws configure set default.s3.multipart_threshold  20MB
 aws configure set default.s3.multipart_chunksize  20MB
-echo "=======================Uploading the file in 20MB chuncks SEQUENTIALLY (single thread)=============================================="
+echo "=======================Uploading the file in 20MB chunks SEQUENTIALLY (single thread)=============================================="
 time aws s3 cp $FILENAME s3://$BUCKET
 # Now in parallel
 aws configure set default.s3.max_concurrent_requests 10 
 aws configure set default.s3.multipart_threshold  20MB
 aws configure set default.s3.multipart_chunksize  20MB
-echo "=======================Uploading the file in 20MB chuncks in PARALLEL (10 threads)================================================="
+echo "=======================Uploading the file in 20MB chunks in PARALLEL (10 threads)================================================="
 time aws s3 cp $FILENAME s3://$BUCKET
 #
 # 5MB
 aws configure set default.s3.max_concurrent_requests 1
 aws configure set default.s3.multipart_threshold  5MB
 aws configure set default.s3.multipart_chunksize  5MB
-echo "=======================Uploading the file in 5MB chuncks SEQUENTIALLY (single thread)=============================================="
+echo "=======================Uploading the file in 5MB chunks SEQUENTIALLY (single thread)=============================================="
 time aws s3 cp $FILENAME s3://$BUCKET
 aws configure set default.s3.max_concurrent_requests 10
 aws configure set default.s3.multipart_threshold  5MB
 aws configure set default.s3.multipart_chunksize  5MB
-echo "=======================Uploading the file in 5MB chuncks in PARALLEL (10 threads)================================================="
+echo "=======================Uploading the file in 5MB chunks in PARALLEL (10 threads)================================================="
 time aws s3 cp $FILENAME s3://$BUCKET
 # Restore old config file
 cleanup

@@ -1,0 +1,41 @@
+Course Outcomes
+———————————
+
+- Understand what S3 is and be able to explain its core feature set and constituents
+
+- Be able to grant selective permissions to your buckets and objects using the various access control methods
+
+- Be able to describe the various S3 data protection methods and understand how to implement them to suit your particular use case
+
+- Be comfortable working out your data access patterns in order to configure automated lifecycle management
+
+- Be able to design S3 for optimal performance
+
+- Know the different methods of monitoring and logging S3 including how to set up near real-time alert and automated actions
+
+- Understand how to configure serverless workflows based on S3 events
+
+- Know how to set up serverless static websites and know the services required to make them fully dynamic
+
+- Feel like you’ve taken the first step to becoming an S3 SME!
+
+Where Next
+————————
+
+- Practice
+  - Continue to use S3
+  - Incorporate S3 into your existing environment
+  - Improve your current S3 implementation
+
+- Consider learning serverless technologies (Lambda…..)
+
+- Expand upon your knowledge of the CLI/learn a programming language and use the SDK’s
+
+- Join the community on the acloudguru forums
+
+Contact
+———
+
+- @stephen_wilding
+- https://www.linkedin.com/in/stephen-wilding-3069a71b
+- acloudguru forums
